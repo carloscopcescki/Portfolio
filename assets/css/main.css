@@ -27,7 +27,7 @@ a {
 
 p {
   color: rgb(70, 70, 70);
-  font-family: "Open Sans", sans-serif;;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
@@ -36,7 +36,7 @@ h1 {
 
 section {
   min-height: 100vh;
-  padding-top: 200px;
+  padding-top: 250px;
 }
 
 .section-title h1 {
@@ -57,9 +57,10 @@ section {
 }
 
 #img-home-content {
-  width: 350px;
+  width: auto;
   height: 350px;
-  border-radius: 100%;
+  border-radius: 8%;
+  object-fit: cover;
 }
 
 .text-home {
@@ -97,7 +98,8 @@ section {
   color: rgb(70, 70, 70);
 }
 
-.text-sobre i, a {
+.text-sobre i,
+a {
   padding-right: 10px;
 }
 
@@ -111,7 +113,7 @@ section {
 }
 
 #linkedin {
-  color: rgb(51, 51, 252)
+  color: rgb(55, 112, 197);
 }
 
 #linkedin:hover {
@@ -188,8 +190,8 @@ section {
   margin: 0;
 }
 
-.timeline::before{
-  content: '';
+.timeline::before {
+  content: "";
   position: absolute;
   left: 35px;
   top: 0;
@@ -206,7 +208,7 @@ section {
 }
 
 .timeline-item::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -20px;
   top: 4px;
@@ -226,12 +228,12 @@ section {
 
 .carousel-inner {
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .carousel-inner .carousel-item img {
-  object-fit: cover;
   height: 500px;
-  width: 650px;
+  width: auto;
   z-index: -1;
 }
 
@@ -268,9 +270,7 @@ section {
   color: rgb(70, 70, 70);
 }
 
-
 @media (max-width: 1400px) {
-  
   .experience-content {
     display: grid;
     justify-content: center;
@@ -284,7 +284,6 @@ section {
     margin-left: 0px;
     margin-top: 20px;
   }
-
 }
 
 @media (max-width: 1200px) {
@@ -324,5 +323,4 @@ section {
   .col-md-5 h3 {
     font-size: 20px;
   }
-
 }
