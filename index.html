@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/navbar.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/sidebar.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -18,233 +21,368 @@
 </head>
 
 <body>
-<header>
-    <nav class="navbar">
-        <ul class="navmenu">
-            <li class="nav-item"><a href="#home" class="nav-link" id="nav-title">CARLOS ALCARRIA</a></li>
-            <li class="nav-item"><a href="#home" class="nav-link">HOME</a></li>
-            <li class="nav-item"><a href="#sobre" class="nav-link">SOBRE</a></li>
-            <li class="nav-item"><a href="#experiencia" class="nav-link">EXPERIÊNCIAS</a></li>
-            <li class="nav-item"><a href="#portfolio" class="nav-link">PROJETOS</a></li>
-            <li class="nav-item"><a href="#contato" class="nav-link" id="last-item">CONTATO</a></li>
-        
-        </ul>
+    <nav class="navbar navbar-dark bg-dark d-lg-none">
+    <div class="container-fluid">
+      <button class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
+        <i class="bi bi-list"></i>
+      </button>
+      <span class="navbar-brand mb-0 h1">Carlos Copcescki</span>
+    </div>
+  </nav>
 
-        <div class = "hamburguer">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+  <aside class="sidebar d-none d-lg-block">
+    <div class="text-center">
+    <br>
+    <br>
+      <img class="avatar" src="assets/img/foto.jpg" alt="Avatar">
+      <h4 class="mt-3 mb-0 fw-bold">Carlos Copcescki</h4>
+      <div class="d-flex justify-content-center gap-2 mt-3">
+        <a class="social-btn" href="https://github.com/carloscopcescki" aria-label="Github" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+        <a class="social-btn" href="https://www.instagram.com/carlos_copcescki/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+        <a class="social-btn" href="https://www.linkedin.com/in/carlos-alcarria/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="side-divider"></div>
+
+    <nav class="d-grid gap-1">
+      <a class="side-link active" href="#home"><i class="bi bi-house"></i> Home</a>
+      <a class="side-link" href="#about"><i class="bi bi-person"></i> Sobre</a>
+      <a class="side-link" href="#resume"><i class="bi bi-mortarboard"></i> Experiências</a>
+      <a class="side-link" href="#portfolio"><i class="bi bi-grid"></i> Projetos</a>
+      <a class="side-link" href="#contact"><i class="bi bi-envelope"></i> Contato</a>
+    </nav>
+  </aside>
+
+  <div class="offcanvas offcanvas-start text-bg-dark d-lg-none" tabindex="-1" id="mobileSidebar">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+
+      <div class="text-center">
+        <img class="avatar" src="assets/img/foto.jpg" alt="Avatar">
+        <h4 class="mt-3 mb-0 fw-bold">Carlos Copcescki</h4>
+        <div class="d-flex justify-content-center gap-2 mt-3">
+            <a class="social-btn" href="https://github.com/carloscopcescki" aria-label="Github" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+            <a class="social-btn" href="https://www.instagram.com/carlos_copcescki/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a class="social-btn" href="https://www.linkedin.com/in/carlos-alcarria/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
         </div>
-    </nav> 
-</header>
+      </div>
 
-<!-- Seção Home -->
-<section id="home">
-    <div class="content-home">
-        <div class="text-home">
-            <h1>Olá! Eu sou Carlos Alcarria</h1>
-            <h4>Estudante de Engenharia da Computação</h4>
-            <br>
+      <div class="side-divider"></div>
+
+      <nav class="d-grid gap-1">
+        <a class="side-link active" href="#home" data-bs-dismiss="offcanvas"><i class="bi bi-house"></i> Home</a>
+        <a class="side-link" href="#about" data-bs-dismiss="offcanvas"><i class="bi bi-person"></i> Sobre</a>
+        <a class="side-link" href="#resume" data-bs-dismiss="offcanvas"><i class="bi bi-mortarboard"></i> Experiências</a>
+        <a class="side-link" href="#portfolio" data-bs-dismiss="offcanvas"><i class="bi bi-grid"></i> Portfolio</a>
+        <a class="side-link" href="#contact" data-bs-dismiss="offcanvas"><i class="bi bi-envelope"></i> Contato</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="content">
+    <section id="home" class="hero">
+        <div>
+            <h1>Olá! Eu sou</h1>
+            <h1>Carlos Copcescki</h1>
+            <p>Estudante de Engenharia da Computação</p>
             <a id="bt-curriculum" href="assets/docs/Currículo.pdf" class="btn btn-dark" target="_blank" rel="noopener noreferrer">Meu currículo</a>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="sobre">
-    <div class="content-sobre">
-        <div class="img-home">
-            <img src="./assets/img/foto.jpg" id="img-home-content">
-        </div>
-        <div class="text-sobre">
-            <h1>Sobre mim</h1>
+    <section id="about" class="master">
+        <div class="mb-4" data-aos="fade-up">
+            <h2>Sobre mim</h2>
+            <div class="section-line"></div>
             <br>
             <p>Me chamo Carlos Alcarria, tenho 23 anos e atualmente estou cursando Engenharia da Computação no Centro Universitário Fundação Santo André.</p>
             <p>Possuo conhecimento em linguagem C e Python, além de linguagens de marcação front-end (HTML e CSS). Sou muito aberto a novos aprendizados e sempre em busca de experiências na área.</p>
-            <a href="https://www.linkedin.com/in/carlos-alcarria/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square" id="linkedin" style="font-size:45px"></i></a>
-            <a href="https://github.com/carloscopcescki" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" id="github" style="font-size:45px"></i></a>
-            <a href="mailto:carlos.copcescki@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope" id="mail" style="font-size:45px"></i></a>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Seção Experiências -->
-<section id="experiencia">
-        <div class="experience-content">
-            <div class="work">
-                <h1>Experiência profissional</h1>
-                <br>
-                <div class="experience-section">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <h3>
-                                <img src="assets/img/General_Motors.png" alt="Logo" class="logo-h3">
-                                General Motors do Brasil
-                            </h3>
-                            <h4>Operador de produção - (03/2022 a atual)</h4>
-                                <ul>✓ Apoio à movimentação de materiais e controle de estoque de indiretos;</ul>
-                                <ul>✓ Criação de dashboards no Power BI para visualização de KPIs operacionais e fluxo de materiais;</ul>
-                                <ul>✓ Emissão de notas fiscais via SAP e interface com áreas como Engenharia e Logística;</ul>
-                                <ul>✓ Automatização de processos com VBA para controle de planilhas e scripts de rotina;</ul>
+    <section id="resume" class="master">
+        <div class="mb-4" data-aos="fade-up">
+            <h2>Experiências</h2>
+            <div class="section-line"></div>
+            <br>
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <h3>Formação acadêmica</h3>
+
+                    <div class="cv-timeline">
+                    <article class="cv-item">
+                        <span class="cv-dot" aria-hidden="true"></span>
+                        <div class="cv-content">
+                        <h3 class="cv-heading">
+                            <img src="assets/img/logo-fsa.png" alt="GM">
+                            &nbsp; Engenharia da Computação
+                        </h3>
+                        <div class="cv-meta">
+                            <span class="cv-period">2023 – Atual</span>
                         </div>
-                        <div class="timeline-item">
-                            <h3>
-                                <img src="assets/img/General_Motors.png" alt="Logo" class="logo-h3">
-                                General Motors do Brasil
-                            </h3>
-                            <h4>Assistente Administrativo - (02/2020 a 09/2021)</h4>
-                                <ul>✓ Gerenciamento do fluxo de peças para projetos em desenvolvimento;</ul>
-                                <ul>✓ Criação de relatórios e apresentações para acompanhamento de performance logística;</ul>
-                                <ul>✓ Controle de utilização da frota veicular interna para movimentações entre unidades;</ul>
-                                <ul>✓  Apoio à comunicação entre times de engenharia e logística.</ul>
+                        <div class="cv-place">Fundação Santo André (FSA) · Santo André, SP</div>
+                        <p class="cv-text">
+                            Bacharelado em Engenharia da Computação
+                        </p>
                         </div>
+                    </article>
+
+                    <article class="cv-item">
+                        <span class="cv-dot" aria-hidden="true"></span>
+                        <div class="cv-content">
+                        <h3 class="cv-heading">
+                            <img src="assets/img/etec.jpg" alt="GM">
+                            &nbsp; Técnico em Informática
+                        </h3>
+                        <div class="cv-meta">
+                            <span class="cv-period">2017 - 2018</span>
+                        </div>
+                        <div class="cv-place">Escola Técnica de Mauá (ETEC) · Mauá, SP</div>
+                        <p class="cv-text">
+                            Formação técnica em T.I
+                        </p>
+                        </div>
+                    </article>
                     </div>
                 </div>
-            </div>
-            <div class="education">
-                <h1>Formação acadêmica</h1>
-                <br>
-                <div class="experience-section">
-                    <h3>
-                        <img src="assets/img/logo-fsa.png" alt="Logo" class="logo-h3">
-                        Fundação Santo André
-                    </h3>
-                    <ul><i class="fa fa-graduation-cap" aria-hidden="true"></i> Engenharia da Computação</ul>
-                    <ul><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; 02/2023 - Atual</ul>
-                </div>
-                <br>
-                <div class="experience-section">
-                <h3>
-                    <img src="assets/img/etec.jpg" alt="Logo" class="logo-h3">
-                    ETEC de Mauá
-                </h3>
-                    <ul><i class="fa fa-graduation-cap" aria-hidden="true"></i> Técnico em Informática</ul>
-                    <ul><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; 08/2017 - 12/2018</ul>
-                </div>
-                <br>
+
+                <div class="col-lg-7">
+                    <h3>Experiência Profissional</h3>
+
+                    <div class="cv-timeline">
+                    <article class="cv-item">
+                        <span class="cv-dot" aria-hidden="true"></span>
+                        <div class="cv-content">
+                        <div class="cv-header">
+                            <h3 class="cv-heading mb-0">
+                                <img src="assets/img/General_Motors.png" alt="GM">
+                                &nbsp; Operador de produção
+                            </h3>
+                            <span class="cv-period">2022 – Atual</span>
+                        </div>
+
+                        <div class="cv-place">General Motors · São Caetano do Sul, SP</div>
+
+                        <ul class="cv-bullets">
+                            <li>Apoio à movimentação de materiais e controle de estoque de indiretos.</li>
+                            <li>Criação de dashboards no Power BI para visualização de KPIs operacionais e fluxo de materiais.</li>
+                            <li>Emissão de notas fiscais via SAP e interface com áreas como Engenharia e Logística.</li>
+                            <li>Automatização de processos com VBA para controle de planilhas e scripts de rotina.</li>
+                        </ul>
+                        </div>
+                    </article>
+
+                    <article class="cv-item">
+                        <span class="cv-dot" aria-hidden="true"></span>
+                        <div class="cv-content">
+                        <div class="cv-header">
+                            <h3 class="cv-heading mb-0">
+                                <img src="assets/img/General_Motors.png" alt="GM">
+                                &nbsp; Assistente administrativo
+                            </h3>
+                            <span class="cv-period">2020 – 2021</span>
+                        </div>
+
+                        <div class="cv-place">General Motors · São Caetano do Sul, SP</div>
+
+                        <ul class="cv-bullets">
+                            <li>Gerenciamento do fluxo de peças para projetos em desenvolvimento.</li>
+                            <li>Criação de relatórios e apresentações para acompanhamento de performance logística.</li>
+                            <li>Controle de utilização da frota veicular interna para movimentações entre unidades.</li>
+                            <li>Apoio à comunicação entre times de engenharia e logística.</li>
+                        </ul>
+                        </div>
+                    </article>
+                    </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Seção Projetos -->
-<section id="portfolio">
-    <h1>Projetos desenvolvidos</h1>
-    <br>
-    <div class="d-flex justify-content-center">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/img/culturainvest.png" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block" id="text-caption">
-                        <h5>Cultura de Investimento</h5>
-                        <p>Site desenvolvido para divulgar educação financeira nas escolas</p>
-                        <a href="https://github.com/carloscopcescki/projeto-cultura-investimento" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Github</a>
-                        <a href="https://investmentofthefuture.netlify.app/" class="btn btn-dark" target="_blank" rel="noopener noreferrer">Demonstração</a>
+    <section id="portfolio" class="master">
+        <div class="mb-4" data-aos="fade-up">
+            <h2>Portfolio</h2>
+            <div class="section-line"></div>
+            <br>
+            <p>Projetos desenvolvidos por mim</p>
+            <br>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="p-card" href="https://fin-educa.vercel.app/" target="_blank" rel="noopener">
+                    <img src="assets/img/culturainvest.png" alt="Projeto 1">
+                    <div class="p-overlay">
+                        <div class="p-info">
+                        <h5>Fin Educa</h5>
+                        <span>Ver projeto</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="p-card" href="https://pystockdash.streamlit.app/" target="_blank" rel="noopener">
+                    <img src="assets/img/monitor-ativo.png" alt="Projeto 2">
+                    <div class="p-overlay">
+                        <div class="p-info">
+                        <h5>Stock Dash</h5>
+                        <span>Ver projeto</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="p-card" href="https://ecosolar.streamlit.app/" target="_blank" rel="noopener">
+                    <img src="assets/img/ecosolar.png" alt="Projeto 3">
+                    <div class="p-overlay">
+                        <div class="p-info">
+                        <h5>Eco Solar</h5>
+                        <span>Ver projeto</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="p-card" href="https://projetoacexods15.netlify.app/" target="_blank" rel="noopener">
+                    <img src="assets/img/ods15.png" alt="Projeto 4">
+                    <div class="p-overlay">
+                        <div class="p-info">
+                        <h5>Remediação do Solo</h5>
+                        <span>Ver projeto</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact" class="master">
+    <div class="container">
+
+        <div class="mb-4" data-aos="fade-up">
+        <h2>Contato</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle mt-3">
+            Quer falar comigo? Manda uma mensagem aqui embaixo.
+        </p>
+        </div>
+
+        <div class="contact-section py-4">
+        <div class="row g-4 align-items-stretch">
+
+            <!-- ESQUERDA: infos -->
+            <div class="col-12 col-lg-5">
+            <div class="contact-card h-100">
+                <div class="contact-info">
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                    <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div>
+                    <h5>Endereço</h5>
+                    <p>São Paulo, Brasil</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/img/ecosolar.png" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block" id="text-caption">
-                        <h5>EcoSolar</h5>
-                        <p>Ferramenta web que calcula a produção estimada de um sistema fotovoltaico</p>
-                        <a href="https://github.com/carloscopcescki/EcoSolar" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Github</a>
-                        <a href="https://ecosolar.streamlit.app/" class="btn btn-dark" target="_blank" rel="noopener noreferrer">Demonstração</a>
-                    </div>            
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                    <i class="bi bi-telephone"></i>
+                    </div>
+                    <div>
+                    <h5>Telefone</h5>
+                    <p>(11) 94277-4950</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/img/monitor-ativo.png" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block" id="text-caption">
-                        <h5>Monitor Financeiro</h5>
-                        <p>Dashboard desenvolvido para acompanhar ações da bolsa de valores</p>
-                        <a href="https://github.com/carloscopcescki/Stock-Dash" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Github</a>
-                        <a href="https://pystockdash.streamlit.app/" class="btn btn-dark" target="_blank" rel="noopener noreferrer">Demonstração</a>
-                    </div>            
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                    <i class="bi bi-envelope"></i>
+                    </div>
+                    <div>
+                    <h5>Email</h5>
+                    <p>carlos.copcescki@gmail.com</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/img/ods15.png" alt="Fourth slide">
-                    <div class="carousel-caption d-none d-md-block" id="text-caption">
-                        <h5>ODS - 15</h5>
-                        <p>Site desenvolvido para promover a conscientização ambiental no meio empresarial</p>
-                        <a href="https://github.com/carloscopcescki/Projeto-Acex-FSA-Site" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Github</a>
-                        <a href="https://projetoacexods15.netlify.app/" class="btn btn-dark" target="_blank" rel="noopener noreferrer">Demonstração</a>
-                    </div>            
+
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- Seção Contato -->
-<section id="contato">
-    <h1>Contato</h1>
-    <br>
-    <div class="contact reveal">
-        <div class="container">
-            <div class="row justify-content-center align-items-start d-flex gap-5">
-                <div class="col-md-6 mb-4 mr-md-5">
-                    <form action="https://api.web3forms.com/submit" method="post">
-                        <input type="hidden" name="access_key" value="d004db22-08d0-41e0-a220-3f07a1298cc1">
-                        <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Nome">
-                        <input type="email" class="form-control mb-3" id="mail" name="email" placeholder="Email">
-                        <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Assunto">
-                        <textarea name="message" id="message" class="form-control mb-3" placeholder="Mensagem"></textarea>
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                        <button type="submit" value="send" class="btn btn-dark" style="height: 50px; width: 150px; cursor: pointer;" id="button">Enviar</button>
-                    </form>
-                </div>            
-                <div class="col-md-5">
-                    <h3>E-mail</h3>
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<a href="mailto:carlos.copcescki@gmail.com">carlos.copcescki@gmail.com</a></p>
-                    <br>
-                    <h3>Telefone</h3>
-                    <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;+55 11 94277-4950</p>
-                    <br>
-                    <h3>Localização</h3>
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;São Paulo</p>
-                </div>
             </div>
+
+            <div class="col-12 col-lg-7">
+            <div class="contact-card h-100">
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="post">
+                    <input type="hidden" name="access_key" value="d004db22-08d0-41e0-a220-3f07a1298cc1">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                    <label class="form-label">Seu Nome</label>
+                    <input type="text" class="form-control contact-input" id="name" name="name" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                    <label class="form-label">Seu Email</label>
+                    <input type="email" class="form-control contact-input" id="mail" name="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="col-12">
+                    <label class="form-label">Assunto</label>
+                    <input type="text" class="form-control contact-input" id="subject" name="subject" placeholder="Qual o assunto?" required>
+                    </div>
+
+                    <div class="col-12">
+                    <label class="form-label">Mensagem</label>
+                    <textarea class="form-control contact-input" rows="7" id="message" placeholder="Escreva sua mensagem..." required></textarea>
+                    </div>
+
+                    <div class="col-12">
+                    <button type="submit" value="send" class="btn btn-dark">
+                        Enviar Mensagem
+                    </button>
+                    </div>
+
+                </div>
+                </form>
+            </div>
+            </div>
+
         </div>
+        </div>
+
     </div>
-</section>
+    </section>
 
-<!-- Rodapé do portfolio -->
-<footer class="portfolio-footer">
-    <p>Copyright ©&nbsp;<script>document.write(new Date().getFullYear())</script>. <b>Carlos Alcarria</b></p>
-    <a href="https://www.linkedin.com/in/carlos-alcarria/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square" id="linkedin" style="font-size:32px"></i></a>
-    <a href="https://github.com/carloscopcescki" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" id="github" style="font-size:32px"></i></a>
-    <a href="mailto:carlos.copcescki@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope" id="mail" style="font-size:32px"></i></a>
-</footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-<script>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            }
+  </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
         });
-    });
 
-    const elements = document.querySelectorAll('.reveal');
-    elements.forEach(el => observer.observe(el));
-</script>
+        const elements = document.querySelectorAll('.reveal');
+        elements.forEach(el => observer.observe(el));
+    </script>
+
+    <script>
+        document.querySelectorAll('.side-link[href^="#"]').forEach(link => {
+        link.addEventListener('click', () => {
+            document.querySelectorAll('.side-link').forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        });
+        });
+    </script>
 
 </body>
 </html>
