@@ -15,10 +15,11 @@
   margin-right: 190px;
   display: flex;
   min-height: 100vh;
+  background-color: #fdfdfd;
 }
 
-.cv-section{
-  background: #fff;
+main {
+  background-color: #fdfdfd;
 }
 
 .cv-timeline{
@@ -76,8 +77,8 @@
 }
 
 .cv-heading img{
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
 }
 
@@ -275,6 +276,72 @@
 
 .section-line{
   background-color: #5a5a5a;
+}
+
+.about-bottom{
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.about-left img{
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(15,23,42,.12);
+}
+
+.about-photo img{
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(235, 236, 238, 0.829);
+}
+
+.about-right{
+  padding-left: 200px;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-skills{
+  margin-top: 15px;
+}
+
+.about-skills h4,
+.about-goal h4{
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.skills-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li{
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(13,110,253,.1);
+  color: #0d6efd;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+@media (max-width: 768px){
+  .about-bottom{
+    grid-template-columns: 1fr;
+  }
+
+  .about-left img{
+    width: 160px;
+  }
 }
 
 @media (max-width: 991.98px){
