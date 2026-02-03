@@ -12,7 +12,6 @@
 
 .master {
   padding: 80px;
-  margin-right: 190px;
   display: flex;
   min-height: 100vh;
   background-color: #fdfdfd;
@@ -299,15 +298,11 @@ main {
 }
 
 .about-right{
-  padding-left: 200px;
-  max-width: 720px;
+  padding-left: 100px;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-.about-skills{
-  margin-top: 15px;
 }
 
 .about-skills h4,
@@ -335,15 +330,35 @@ main {
 }
 
 @media (max-width: 768px){
+
   .about-bottom{
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about-left{
+    display: flex;
+    justify-content: center;
   }
 
   .about-left img{
     width: 160px;
   }
+
+  .about-right{
+    width: 100%;
+  }
+
+  .about-goal{
+    margin-top: 12px;
+  }
+
+  .about-goal p{
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 991.98px){
   .cv-title{ font-size: 28px; }
+
 }
